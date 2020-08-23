@@ -72,12 +72,12 @@
 }
 
 \RequirePackage{tikz}
-\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
-   \node[shape=circle,text=white,fill=MarkerColour!80!black,font=\sffamily\scriptsize\bfseries,inner sep=1pt,text height=1.35ex,minimum width=1.5em,text centered] (char) {#1};}}
+% \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+%   \node[shape=circle,text=white,fill=MarkerColour!80!black,font=\sffamily\scriptsize\bfseries,inner sep=1pt,text height=1.35ex,minimum width=1.5em,text centered] (char) {#1};}}
    
 \newcounter{bibitem}
 \AtBeginBibliography{\setcounter{bibitem}{1}}
-\AtEveryBibitem{\makebox[2.5em][l]{\circled{\thebibitem}\stepcounter{bibitem}}}
+% \AtEveryBibitem{\makebox[2.5em][l]{\circled{\thebibitem}\stepcounter{bibitem}}}
 
 % \renewcommand{\bibfont}{\small}
 \setlength{\bibitemsep}{1.5ex}
@@ -93,9 +93,9 @@
 \headerscale{1}
 %\setlength{\headerspace}{6pt}
 \rubricfont{\Large\bfseries\sffamily}
-\setlength{\rubricspace}{2pt}
+\setlength{\rubricspace}{1pt}
 %\setlength{\rubricafterspace}{-9pt}
-\setlength{\rubricafterspace}{-3pt}
+\setlength{\rubricafterspace}{-9pt}
 \setlength{\subrubricspace}{3pt}
 \setlength{\subrubricbeforespace}{4pt}
 \def\@@rubrichead#1{%

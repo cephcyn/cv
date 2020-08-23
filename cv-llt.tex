@@ -34,14 +34,14 @@
 \myname{Zhou}{Joyce}
 
 % Change the page margins if you want
-% \geometry{left=1cm,right=1cm,top=1.5cm,bottom=1.5cm}
+\geometry{left=1cm,right=1cm,top=1cm,bottom=1cm}
 
 % Change the colours if you want
 % \definecolor{SwishLineColour}{HTML}{00FFFF}
 % \definecolor{MarkerColour}{HTML}{0000CC}
 
 % Change the item prefix marker if you want
-% \prefixmarker{$\diamond$}
+\prefixmarker{$\triangleright$}
 
 %% Photo is only shown if "fullonly" is included
 % \includecomment{fullonly}
@@ -49,20 +49,22 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Define URLs to peoples' websites etc
-% TODO move this to elsewhere that makes more sense LaTeX-wise perhaps?
+% Define peoples' names + include URLs to their websites
 
 \newcommand{\pBansalG}{\href{https://homes.cs.washington.edu/~bansalg/}{Gagan Bansal}}
-\newcommand{\pWeldD}{\href{https://www.cs.washington.edu/people/faculty/weld}{Dan Weld}}
-\newcommand{\pRuzzoL}{\href{https://homes.cs.washington.edu/~ruzzo/}{Larry Ruzzo}}
-\newcommand{\pPahnkeE}{\href{https://faculty.washington.edu/eacox/home/index.html}{Emily Pahnke}}
+\newcommand{\pWeldD}{\href{https://www.cs.washington.edu/people/faculty/weld}{Prof. Dan Weld}}
+\newcommand{\pRuzzoL}{\href{https://homes.cs.washington.edu/~ruzzo/}{Prof. Larry Ruzzo}}
+\newcommand{\pPahnkeE}{\href{https://faculty.washington.edu/eacox/home/index.html}{Prof. Emily Pahnke}}
 \newcommand{\pPerlmutterL}{\href{https://homes.cs.washington.edu/~lrperlmu/}{Leah Perlmutter}}
-\newcommand{\pErnstM}{\href{https://homes.cs.washington.edu/~mernst/}{Mike Ernst}}
+\newcommand{\pErnstM}{\href{https://homes.cs.washington.edu/~mernst/}{Prof. Mike Ernst}}
 \newcommand{\pHsiaJ}{\href{https://homes.cs.washington.edu/~jhsia/}{Justin Hsia}}
 \newcommand{\pPirtleT}{Tyler Pirtle}
-\newcommand{\pGlassmanE}{\href{http://glassmanlab.seas.harvard.edu/glassman.html}{Elena Glassman}}
+\newcommand{\pGlassmanE}{\href{http://glassmanlab.seas.harvard.edu/glassman.html}{Prof. Elena Glassman}}
 
-% Editing notes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Define Belinda's comment style :)
+
 \newcommand{\belinda}[1]{{\color{blue!} [Belinda:] {#1}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -103,23 +105,26 @@
 \photoscale{0.13}
 \end{fullonly}
 
-\title{Curriculum Vitae}
+\title{Joyce Zhou, Curriculum Vitae}
 
 \begin{document}
 \makeheaders[c]
 \lastupdated
+
 \makerubric{education}
 
-%% Sometimes when a section can't be nicely modelled with the \entry[]... mechanism; hack our own and use \input NOT \makerubric
-\input{publications}
-
 \makerubric{researchexp}
+
 \makerubric{teachingexp}
 
 \makerubric{skills}
+
 \makerubric{misc}
 
-\makerubric{projects}
+%% Sometimes when a section can't be nicely modelled with the \entry[]... mechanism, hack our own and use \input NOT \makerubric
+\input{publications}
+
+% \makerubric{projects}
 
 % \makerubric{referee}
 % \input{referee-full}
