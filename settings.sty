@@ -94,7 +94,6 @@
 %\setlength{\headerspace}{6pt}
 \rubricfont{\Large\bfseries\sffamily}
 \setlength{\rubricspace}{1pt}
-%\setlength{\rubricafterspace}{-9pt}
 \setlength{\rubricafterspace}{-9pt}
 \setlength{\subrubricspace}{3pt}
 \setlength{\subrubricbeforespace}{4pt}
@@ -127,7 +126,7 @@
 
 \newcommand{\makerubrichead}[1]{\vskip\baselineskip\@@rubrichead{#1}}
 
-\defbibheading{subbibliography}{\vskip\subrubricbeforespace{\@subrubricfont\hspace{3pt}#1}\par}
+\defbibheading{subbibliography}{\vskip\subrubricbeforespace{\@subrubricfont\hspace{3pt}#1}}
 
 \defbibfilter{booksandchapters}{%
 ( type=book or type=incollection )
