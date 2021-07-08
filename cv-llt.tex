@@ -76,15 +76,15 @@
 
 % Define the last-updated macro
 
-\usepackage[absolute]{textpos} % Required for positioning the Last Updated text at the top right of the page
-\usepackage[UKenglish]{isodate} % Prints the Last Updated date in UK English format
+\usepackage[absolute]{textpos} % Required for positioning the "Last updated" text at the top right of the page
+\usepackage[iso,german]{isodate} % Prints the "Last updated" date in YYYY-MM-DD format
 
 \setlength{\TPHorizModule}{0.01\paperwidth} % Sets the units for the horizontal position used in the \begin{textblock} argument
 \setlength{\TPVertModule}{0.01\paperwidth} % Sets the units for the vertical position used in the \begin{textblock} argument
-\newcommand{\lastupdated}{ % Create a new command for printing the Last Updated text
-\begin{textblock}{25}(75,5) % The position of the Last Updated text on the page (75% of the page across, 2% down)
+\newcommand{\lastupdated}{ % Create a new command for printing the "Last updated" text
+\begin{textblock}{25}(80,5) % The position of the "Last updated" text on the page (80% of the page across, 2% down)
 \fontsize{8pt}{10pt}\selectfont % Text styling of the text
-\textcolor{gray}{Last Updated on \today} % Last Updated text
+\textcolor{gray}{Last updated \today} % Last Updated text
 \end{textblock}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
