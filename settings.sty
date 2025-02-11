@@ -119,18 +119,21 @@
 \def\@prefixmarker{\relscale{.9}\faBookmark}
 
 \prefix{%
-  \hspace*{-1ex}
+  \hspace*{-3ex}
   \color{MarkerColour!80!black}\@prefixmarker%
-  \hspace*{1ex}%
+  \hspace*{0.5ex}%
 }
 
 \newcommand{\makerubrichead}[1]{\vskip\baselineskip\@@rubrichead{#1}}
 
 \defbibheading{subbibliography}{\vskip\subrubricbeforespace{\@subrubricfont\hspace{3pt}#1}}
 
-\defbibfilter{booksandchapters}{%
-( type=book or type=incollection )
-}
+% \defbibfilter{published}{
+% ( type=article or type=inproceedings )
+% }
+% \defbibfilter{booksandchapters}{
+% ( type=book or type=incollection )
+% }
 
 \newcommand{\myname}[2]{%
    \def\@mylastname{#1}%

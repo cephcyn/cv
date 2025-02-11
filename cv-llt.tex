@@ -27,7 +27,7 @@
 \fi
 
 %% Only needed if you want a Publication List
-\addbibresource{own-bib.bib}
+\addbibresource{publications.bib}
 
 %% Specify your last name and first name (as given in the .bib) to automatically bold your own name in the publications list. One caveat: You need to write \bibnamedelima where there's a space in your name for this to work properly for now...
 % \myname{Lim}{Lian\bibnamedelima Tze}
@@ -53,11 +53,11 @@
 
 % Define peoples' names + include URLs to their websites
 
-\newcommand{\pBansalG}{\href{https://homes.cs.washington.edu/~bansalg/}{Gagan Bansal}}
+\newcommand{\pBansalG}{\href{https://gagb.github.io/}{Gagan Bansal}}
 \newcommand{\pWeldD}{\href{https://www.cs.washington.edu/people/faculty/weld}{Prof. Dan Weld}}
 \newcommand{\pRuzzoL}{\href{https://homes.cs.washington.edu/~ruzzo/}{Prof. Larry Ruzzo}}
 \newcommand{\pPahnkeE}{\href{https://faculty.washington.edu/eacox/home/index.html}{Prof. Emily Pahnke}}
-\newcommand{\pPerlmutterL}{\href{https://homes.cs.washington.edu/~lrperlmu/}{Leah Perlmutter}}
+\newcommand{\pPerlmutterL}{\href{https://perlmutter.cs.grinnell.edu/home/}{Leah Perlmutter}}
 \newcommand{\pErnstM}{\href{https://homes.cs.washington.edu/~mernst/}{Prof. Mike Ernst}}
 \newcommand{\pHsiaJ}{\href{https://homes.cs.washington.edu/~jhsia/}{Prof. Justin Hsia}}
 \newcommand{\pPirtleT}{Tyler Pirtle}
@@ -65,12 +65,15 @@
 \newcommand{\pWeberR}{\href{http://weberrobbie.com/}{Prof. Robbie Weber}}
 \newcommand{\pHazenM}{Dr. Megan Hazen}
 \newcommand{\pWangC}{Cosmo Wang}
+\newcommand{\pJoachimsT}{\href{http://www.joachims.org/}{Prof. Thorsten Joachims}}
+\newcommand{\pPiersonE}{\href{http://www.cs.cornell.edu/~emmapierson/}{Prof. Emma Pierson}}
+\newcommand{\pSextonT}{\href{https://www.nist.gov/people/rachael-sexton}{Rachael Sexton}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Define Belinda's comment style :)
+% Define comment style
 
-\newcommand{\belinda}[1]{{\color{blue!} [Belinda:] {#1}}}
+\newcommand{\commenter}[1]{{\color{blue!} [Comment:] {#1}}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -82,9 +85,9 @@
 \setlength{\TPHorizModule}{0.01\paperwidth} % Sets the units for the horizontal position used in the \begin{textblock} argument
 \setlength{\TPVertModule}{0.01\paperwidth} % Sets the units for the vertical position used in the \begin{textblock} argument
 \newcommand{\lastupdated}{ % Create a new command for printing the "Last updated" text
-\begin{textblock}{25}(80,5) % The position of the "Last updated" text on the page (80% of the page across, 2% down)
-\fontsize{8pt}{10pt}\selectfont % Text styling of the text
-\textcolor{gray}{Last updated \today} % Last Updated text
+    \begin{textblock}{25}(82,5) % The position of the "Last updated" text on the page (82% of the page across, 2% down)
+    \fontsize{8pt}{10pt}\selectfont % Text styling of the text
+    \textcolor{gray}{Last updated \today} % Last Updated text
 \end{textblock}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -92,15 +95,18 @@
 
 \leftheader{%
 %   {\LARGE\bfseries\sffamily Your Name Here, Ph.D.}
-    {\LARGE\bfseries\sffamily Joyce Zhou} %  
+    {\LARGE\bfseries\sffamily Joyce Zhou \textsubscript{(they/them)}} %  
 
-  \makefield{\faEnvelope[regular]}{\texttt{jyzhou15@cs.washington.edu}}
-  \makefield{\faTwitter}{\href{https://twitter.com/cephcyn}{\texttt{@cephcyn}}}
+%   \makefield{\faEnvelope[regular]}{\texttt{joyce.zhou@nist.gov}}
+  \makefield{\faEnvelope[regular]}{\texttt{jz549@cornell.edu}}
+%   \makefield{\faEnvelope[regular]}{\texttt{jyz@cs.cornell.edu}}
+%   \makefield{\faEnvelope[regular]}{\texttt{jyzhou15@cs.washington.edu}}
+  \makefield{\faMastodon}{\href{https://hci.social/@cephcyn}{\texttt{@cephcyn@hci.social}}}
   \makefield{\faGithub}{\href{https://github.com/cephcyn}{\texttt{@cephcyn}}}
 
   \makefield{\faGlobe}{\url{https://cephcyn.github.io}}
   \makefield{\faLinkedin}{\url{https://www.linkedin.com/in/cephcyn/}}
-%   \makefield{\faPhone}{\texttt{425-499-7547}}
+%   \makefield{\faPhone}{\texttt{000-000-0000}}
 
 }
 
@@ -110,7 +116,7 @@
 \photoscale{0.13}
 \end{fullonly}
 
-\title{Joyce Zhou, Curriculum Vitae}
+\title{Joyce (Jay) Zhou, CV}
 
 \begin{document}
 \makeheaders[c]
@@ -122,10 +128,14 @@
 
 \makerubric{teaching}
 
-\newpage
+% \newpage
 
 %% Sometimes when a section can't be nicely modelled with the \entry[]... mechanism, hack our own and use \input NOT \makerubric
 \input{publications}
+
+\makerubric{service}
+
+\makerubric{mentoring}
 
 \makerubric{honors}
 
